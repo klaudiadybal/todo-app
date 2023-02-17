@@ -78,6 +78,4 @@ while True:
 
 print("Bye!")
 
-# text = """
-#
-#  """  // it can store multiple lines of text
+
