@@ -8,3 +8,4 @@ make soup
 make pizza
 clean the code
 learn to the exam
+Master Python
