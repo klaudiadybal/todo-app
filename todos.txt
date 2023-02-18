@@ -1,5 +1,4 @@
-fix the computer
-get the car
+buy plants
 fix the bug
 clean the bag
 fix the drawer
@@ -9,3 +8,6 @@ make pizza
 clean the code
 learn to the exam
 Master Python
+Master SQL
+My newest todo is added
+last todo
