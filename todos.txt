@@ -1,4 +1,3 @@
-buy plants
 fix the bug
 clean the bag
 fix the drawer
@@ -11,3 +10,6 @@ Master Python
 Master SQL
 My newest todo is added
 last todo
+buy books
+fix the drawer
+
