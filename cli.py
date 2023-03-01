@@ -1,5 +1,3 @@
-# from functions import get_todos, write_todos
-# from modules import functions
 import functions
 import time
 now = time.strftime("%b %d, %Y %H:%M:%S")
@@ -10,22 +8,16 @@ while True:
     user_action = input("Type add, show or edit, complete or exit: ")
     user_action = user_action.strip()
 
-    # if 'add' in user_action or 'new' in user_action:
     if user_action.startswith("add"):
         todo = user_action[4:]
 
         todos = functions.get_todos()
-        # todos = get_todos("todos1.txt") // that file will replace default parameter
         todos.append(todo + '\n')
 
         functions.write_todos(filepath="todos.txt", todos_arg=todos)
-        # if we write like this we don't need to respect the order
 
     elif user_action.startswith("show"):
         todos = functions.get_todos("todos.txt")
-        # todos = get_todos(filepath="todos.txt")
-
-        # new_todos = [item.strip('\n') for item in todos]
 
         for index, item in enumerate(todos):
             item = item.strip('\n')
@@ -73,8 +65,6 @@ while True:
     else:
         print("Command is not valid.")
 
-    # case _:
-    #    print("Hey, you entered an unknown command!")
 
 print("Bye!")
 

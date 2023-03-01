@@ -54,11 +54,11 @@ while True:
                 sg.popup("Please select an item first.", font=("Helvetica", 20))
         case "Complete":
             try:
-                todo_to_complete = values['todos'][0]  # [0] wyciąga ze słownika sam string
+                todo_to_complete = values['todos'][0]
                 todos = functions.get_todos()
                 todos.remove(todo_to_complete)
                 functions.write_todos(todos)
-                window['todos'].update(values=todos) # nadpisywanie istniejącej listy
+                window['todos'].update(values=todos)
                 window['todo'].update(value='')
             except IndexError:
                 sg.popup("Please select an item first.", font=("Helvetica", 20))
@@ -74,5 +74,3 @@ while True:
 window.close()
 
 
-# add_button = sg.Button(size = 10, image_source="add.png",
-# mouseover_colors="LightBrown", tooltip="Add To do", key="Add")
